@@ -8,26 +8,29 @@ const Home = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.state?.scrollTo) {
-      scroller.scrollTo(location.state.scrollTo, {
-        duration: 500,
-        smooth: true,
-        offset: -70, // adjust for navbar height
-      });
+    // Only scroll if there's a hash in the URL
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
-  }, [location.state]);
+    // Otherwise scroll to top
+    else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
 
   return (
     <div>
       <section id="about">
         <AboutSection />
       </section>
-
       <section id="projects">
         <ProjectsSection />
       </section>
     </div>
   );
-}
+};
 
 export default Home;

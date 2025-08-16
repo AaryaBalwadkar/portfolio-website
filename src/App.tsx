@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/homepage-components/ScrollToTop"; // Add this import
 import "./App.css";
 import ProjectsSection from "./components/homepage-components/ProjectsSection";
 import ProjectShikshaSankalp from "./pages/ProjectShikshaSankalp";
@@ -8,6 +9,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <BrowserRouter basename="/portfolio-website/">
+      <ScrollToTop /> {/* Add this line */}
       <Routes>
         <Route path="*" element={<h1>404 - Not Found</h1>} />
         <Route path="" element={<Layout />}>

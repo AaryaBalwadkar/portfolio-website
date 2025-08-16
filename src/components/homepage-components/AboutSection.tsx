@@ -1,16 +1,17 @@
 import { FiLinkedin, FiGithub, FiAward } from 'react-icons/fi';
+import profile from "../../assets/profile.jpg";
 
 const AboutSection = () => {
   return (
-    <section className="mx-auto py-16">
-      <div className="bg-white rounded-xl shadow-sm overflow-hidden">
+    <section className="mx-auto py-16 w-full">
+      <div className="bg-white rounded-xl shadow-sm overflow-hidden w-full">
         {/* Profile Header */}
         <div className="md:flex">
           {/* Profile Image (Left) */}
-          <div className="md:w-1/3 p-6 md:p-8 flex justify-center bg-gray-50">
-            <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+          <div className="md:w-[50%] p-6 md:p-8 flex justify-center bg-gray-50">
+            <div className="relative w-[440px] h-[420px] rounded-[30px] overflow-hidden border-4 border-white shadow-lg">
               <img
-                src="/profile.jpg"
+                src={profile}
                 alt="AB"
                 className="object-cover"
               />
@@ -18,7 +19,7 @@ const AboutSection = () => {
           </div>
 
           {/* Content (Right) */}
-          <div className="md:w-2/3 p-6 md:p-10">
+          <div className="md:w-[50%] p-6 md:p-10">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Aarya Balwadkar</h1>
             
             {/* Certification Badge */}

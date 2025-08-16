@@ -6,7 +6,7 @@ import shikshasankalpbanner from "../../assets/shikshasankalpbanner.png"
 const ProjectsSection = () => {
     const navigate = useNavigate();
   return (
-    <div>
+    <div className="mb-20">
       {projects.map(project => (
         <ProjectCard
           key={project.id}

@@ -6,18 +6,18 @@ import Introduction from "../components/projects-components/Introduction";
 import Personas from "../components/projects-components/Personas";
 import Research from "../components/projects-components/Research";
 import projects from "../data/projects.json";
-import hero1 from "../assets/hero1.png"; // Adjust the path as necessary
+import background from "../assets/background1.png";
 import FinalSolution from "../components/projects-components/FinalSolution";
 
 const ProjectShikshaSankalp = () => {
   const project = projects.find((p) => p.link === "shiksha-sankalp");
   return (
-    <div className="w-full">
+    <div className="w-full mb-20">
       <Introduction
         title={project?.name}
         description={project?.description}
         bannerDescription={project?.bannerDescription}
-        img={hero1}
+        img={background}
       />
       <ChallengeSolution
         challenge={project?.challenge}
