@@ -10,10 +10,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="*" element={<h1>404 - Not Found</h1>} />
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<ProjectsSection />} />
-          <Route path="/shiksha-sankalp" element={<ProjectShikshaSankalp />} />
+        <Route path="/portfolio-website/" element={<Layout />}>
+          <Route path="/portfolio-website/" element={<Home />} />
+          <Route path="/portfolio-website/projects" element={<ProjectsSection />} />
+          <Route path="/portfolio-website/shiksha-sankalp" element={<ProjectShikshaSankalp />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -5,7 +5,6 @@ const FinalSolution = () => {
         <iframe
           className="w-full h-[800px]"
           src="https://embed.figma.com/proto/iraqAorzLte7xiN2Wclzf2/Shiksha-Sankalp?node-id=1-2&p=f&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&embed-host=share"
-          allowfullscreen
         ></iframe>
       </div>
 

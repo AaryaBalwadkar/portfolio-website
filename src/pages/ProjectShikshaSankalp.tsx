@@ -10,7 +10,7 @@ import hero1 from "../assets/hero1.png"; // Adjust the path as necessary
 import FinalSolution from "../components/projects-components/FinalSolution";
 
 const ProjectShikshaSankalp = () => {
-  const project = projects.find(p => p.link === "shiksha-sankalp");
+  const project = projects.find((p) => p.link === "shiksha-sankalp");
   return (
     <div className="w-full">
       <Introduction
@@ -29,13 +29,15 @@ const ProjectShikshaSankalp = () => {
         researchGoals={project?.researchGoals}
         methodologyInsights={project?.methodologyInsights}
       />
-      <InterviewResearch userResearch={project?.userResearch} />
-      <Personas project={project} />
+      {project?.userResearch && (
+        <InterviewResearch userResearch={project.userResearch} />
+      )}
+      {project && <Personas project={project} />}
       <DesignPrinciples designPrinciples={project?.designPrinciples} />
       <Ideation ideation={project?.ideation} />
       <FinalSolution />
     </div>
-  )
-}
+  );
+};
 
-export default ProjectShikshaSankalp
+export default ProjectShikshaSankalp;

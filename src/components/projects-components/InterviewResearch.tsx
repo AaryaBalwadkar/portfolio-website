@@ -1,5 +1,3 @@
-import React from "react";
-
 type UserResearchProps = {
   userResearch: {
     exploratoryQuestions: Array<{
@@ -21,11 +19,6 @@ type UserResearchProps = {
       summary: string;
       quote: string;
       quoteUser: string;
-      insight?: string;
-    };
-    expertInterviews: {
-      description: string;
-      quotes: Array<{ text: string; user: string }>;
       insight?: string;
     };
   };
