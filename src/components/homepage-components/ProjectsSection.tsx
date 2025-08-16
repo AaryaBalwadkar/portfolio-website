@@ -7,6 +7,7 @@ const ProjectsSection = () => {
     const navigate = useNavigate();
   return (
     <div className="mb-20">
+      <h1 className="text-4xl font-extrabold mb-5">projects</h1>
       {projects.map(project => (
         <ProjectCard
           key={project.id}
