@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { scroller } from "react-scroll";
 import ProjectsSection from "../components/homepage-components/ProjectsSection";
 import AboutSection from "../components/homepage-components/AboutSection";
 
