@@ -7,7 +7,7 @@ type IntroductionProps = {
 
 const Introduction = ({ title, bannerDescription, description, img }: IntroductionProps) => {
   return (
-    <section className="w-full py-12 bg-white">
+    <section className="w-full py-20 bg-white">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
         
         {/* Left: Text */}
@@ -15,7 +15,7 @@ const Introduction = ({ title, bannerDescription, description, img }: Introducti
           <h1 className="text-3xl md:text-6xl font-bold mb-4 text-[#70d6ff]">{title}</h1>
           <p className="text-sm font-bold mb-5 text-gray-400 roboto tracking-[8px] ">UI + UX <a className="text-[#70d6ff] font-extrabold"> / </a> VISUAL DESIGNER</p>
           <p className="text-xl font-bold mb-5">{bannerDescription}</p>
-          <p className="text-gray-400 text-sm roboto font-bold">{description}</p>
+          <p className="text-gray-600 roboto">{description}</p>
         </div>
 
         {/* Right: Image */}

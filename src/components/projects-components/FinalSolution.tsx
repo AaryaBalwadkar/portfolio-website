@@ -1,6 +1,7 @@
 const FinalSolution = () => {
   return (
     <div className="w-full">
+      <h1 className="text-4xl font-extrabold mb-15 mt-40">final solution</h1>
       <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-xl overflow-hidden shadow-xl">
         <iframe
           className="w-full h-[800px]"
