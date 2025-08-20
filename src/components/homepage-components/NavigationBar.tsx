@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="h-[100px] justify-between flex items-center">
+    <nav className={`p-8 h-[100px] justify-between flex items-center`}>
       <div className="text-6xl font-bold"><span className="text-[#70d6ff]">A</span><span className="text-purple-600">B</span></div>
       <div className="flex gap-20 justify-end content-end">
         <button onClick={() => handleNavClick("about")}>About</button>

@@ -40,7 +40,7 @@ const Ideation = ({ ideation }: IdeationProps) => {
 
   return (
     <div className="w-full">
-      <h1 className="text-4xl font-extrabold mb-5">IDEATION</h1>
+      <h1 className="text-4xl font-extrabold mb-5">ideation</h1>
       
       {/* Early Concept Section */}
       <h2 className="text-xl font-bold mb-6 tracking-[8px] mt-15">EARLY CONCEPT</h2>
